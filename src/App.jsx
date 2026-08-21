@@ -6,6 +6,12 @@ function App() {
   function increaseCount() {
     setCount(count + 1)
   }
+  function decreaseCount() {
+    setCount(count - 1)
+  }
+  function resetCount() {
+    setCount(0)
+  }
 
   return (
     <>
@@ -13,6 +19,12 @@ function App() {
       <p>Count: {count}</p>
       <button onClick={increaseCount}>
         Increase Count
+      </button>
+      <button onClick={decreaseCount}>
+        Decrease Count
+      </button>
+      <button onClick={resetCount}>
+        Reset Count
       </button>
     </>
     
